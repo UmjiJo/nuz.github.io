@@ -1,0 +1,94 @@
+/*contact.css*/
+
+#contact{
+	width: 100%; height: 100%;
+	background: url(../images/contact_bg.png) no-repeat right;
+}
+@media screen and (max-width: 1366px){
+#contact{
+	background: url(../images/contact_bg_t.png) no-repeat right;
+}
+}
+@media screen and (max-width: 767px){
+#contact{
+	background-size: 100% 100%;
+}
+}
+	#contact > p{
+		margin-left: 46%;
+		padding-top: 8%;
+		box-sizing: border-box;
+	}
+	@media screen and (max-width: 1366px){
+	#contact > p{
+		margin-left: 35%;
+		padding-top: 25%;
+	}
+	}
+	@media screen and (max-width: 767px){
+	#contact > p{
+		margin-left: 0;
+		text-align: center;
+		padding-top: 25%;
+		font-size: 13px;
+	}
+	}
+
+form{
+	width: 405px; height: 655px;
+	margin-left: 45%;
+	padding-top: 2%;
+}
+@media screen and (max-width: 1366px){
+form{
+	margin-left: 33%;
+	padding-top: 2%;
+}
+}
+@media screen and (max-width: 767px){
+form{
+	width: 300px; height: 350px;
+	margin: 0 auto;
+	padding-top: 0%;
+}
+}
+	form > input{
+		margin-top: 50px;
+	}
+	form > .name{
+		width: 405px; height: 50px;
+		background: none;
+		border-bottom: 1px solid #000;
+	}
+	@media screen and (max-width: 767px){
+	form > .name{
+		width: 300px; height: 30px;
+	}
+	}
+	form > .email{
+		width: 405px; height: 50px;
+		background: none;
+		border-bottom: 1px solid #000;
+	}
+	@media screen and (max-width: 767px){
+	form > .email{
+		width: 300px; height: 30px;
+	}
+	}
+	form > .message{
+		width: 405px; height: 200px;
+		background: none;
+		border: 1px solid #000;
+		text-align: center;
+	}
+	@media screen and (max-width: 767px){
+	form > .message{
+		width: 300px; height: 50px;
+	}
+	}
+	form > .submit{
+		float: right;
+		background: #000;
+		color: #fff;
+		padding: 0 5px;
+	}

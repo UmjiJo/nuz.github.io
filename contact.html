@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>contact</title>
+<link rel="stylesheet" href="CSS/common.css" />
+<link rel="stylesheet" href="CSS/master.css" />
+<link rel="stylesheet" href="CSS/header.css" />
+<link rel="stylesheet" href="CSS/contact.css" />
+<script src="js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+
+<script>
+	$( window ).on( "orientationchange", function( event ) {
+	  if (parseInt(document.body.offsetWidth) > 560)
+	  {
+		//alert(parseInt(document.body.offsetWidth));
+		$('.portrait_view').css('display','none');
+	  }else
+	  {
+		//alert(parseInt(document.body.offsetWidth));
+		$('.portrait_view').css('display','block');
+	  }
+	} );
+</script>
+<div class="portrait_view"></div>
+
+<input type="checkbox" id="toggle">
+
+<div id="wrap">
+	<header id="main_header">
+		<label for="toggle" class="toggle"></label>
+
+		<h2 id="logo"><a href="index.html"><img src="images/logo.png" alt="로고" /></a></h2>
+
+		<ul id="main_nav">
+			<li><span>01</span><a href="index.html">MAIN</a></li>
+			<li><span>02</span><a href="about_me.html">ABOUT ME</a></li>
+			<li><span>03</span><a href="portfolio.html">PORTFOLIO</a></li>
+			<div class="black_bar"></div>
+			<li class="hover"><span>04</span><a href="contact.html">CONTACT</a></li>
+		</ul>
+	</header>
+
+	<div id="contact">
+		<p>채용과 관련해서 문의하고 싶으시다면<br />
+		one_thumbup@naver.com로<br />
+		메일을 보내주시거나 아래의 폼을 통해 연락 주세요.<br />
+		확인 후 빠른 회신 드리겠습니다.</p>
+		<form action="https://formspree.io/one_thumbup@naver.com" method="POST">
+			<input class="name" type="text" name="name" placeholder="NAME" />
+			<input class="email" type="email" name="_replyto" placeholder="EMAIL" />
+			<input class="message" type="text" name="message" placeholder="MESSAGE" />
+			<input class="submit" type="submit" value="Send" />
+		</form>
+	</div>
+
+</div><!--wrap-->
+</body>
+</html>

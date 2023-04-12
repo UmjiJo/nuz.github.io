@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ABOUT ME</title>
+<link rel="stylesheet" href="CSS/common.css" />
+<link rel="stylesheet" href="CSS/master.css" />
+<link rel="stylesheet" href="CSS/header.css" />
+<link rel="stylesheet" href="CSS/about_me.css" />
+<script src="js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+
+<script>
+	$( window ).on( "orientationchange", function( event ) {
+	  if (parseInt(document.body.offsetWidth) > 560)
+	  {
+		//alert(parseInt(document.body.offsetWidth));
+		$('.portrait_view').css('display','none');
+	  }else
+	  {
+		//alert(parseInt(document.body.offsetWidth));
+		$('.portrait_view').css('display','block');
+	  }
+	} );
+	</script>
+	<div class="portrait_view"></div>
+
+<input type="checkbox" id="toggle">
+
+<div id="wrap">
+	<header id="main_header">
+		<label for="toggle" class="toggle"></label>
+
+		<h2 id="logo"><a href="index.html"><img src="images/logo.png" alt="로고" /></a></h2>
+
+		<ul id="main_nav">
+			<li><span>01</span><a href="index.html">MAIN</a></li>
+			<li class="hover"><span>02</span><a href="about_me.html">ABOUTME</a></li>
+			<div class="black_bar"></div>
+			<li><span>03</span><a href="portfolio.html">PORTFOLIO</a></li>
+			<li><span>04</span><a href="contact.html">CONTACT</a></li>
+		</ul>
+	</header>
+
+	<div id="about_wrap">
+		<div class="contents">
+			<h1>ABOUT ME</h1>
+			<h2>20<br />19</h2>
+			<div id="main_img"></div>
+		</div>
+
+		<div id="txt">
+			<h2>안녕하세요 조엄지입니다.</h2>
+			<p>"감각있는 웹디자이너&웹퍼블리셔가 되고싶습니다."</p>
+		</div>
+	</div><!--about_wrap-->
+</div><!--wrap-->
+</body>
+</html>
